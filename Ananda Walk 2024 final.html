@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda Walk 2024</title>
+    <style>
+        body {
+            background-color: maroon;
+            color: gold;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(127, 0, 0, 0.484);
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: gold;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: maroon;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .gold-design {
+            border: 5px solid gold;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            background-color: transparent;
+        }
+        .merchandise img, .gallery img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+        footer {
+            background-color: rgb(213, 197, 20);
+            color: maroon;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        section {
+            display: none;
+            padding: 50px 0;
+        }
+        .active {
+            display: block;
+        }
+        .subtitle {
+            font-size: 0.8em;
+            color: gold;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        window.onload = function() {
+            showSection('home');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ananda Walk 2024</h1>
+        <p class="subtitle">Step Together, Soar Forever</p>
+        <p class="subtitle">at the 7th of july Anandians are ready to soar the streets of colombo with ananda walk 2024. will you</p>
+        <p class="subtitle">be there</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('about')">About</a></li>
+            <li><a onclick="showSection('merchandise')">Merchandise</a></li>
+            <li><a onclick="showSection('gallery')">Gallery</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="active">
+        <div class="content">
+            <div class="gold-design">
+                <img src="your-image-url.jpg" alt="Ananda Walk 2024 Image">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="content">
+            <div class="gold-design">
+                <h2>About Ananda Walk 2024</h2>
+                <p>Welcome to Ananda Walk 2024, ananda walk 2024 is the annual walk and afterparty organized by ACOBA in colabration with ACPG,ACBU,ACRC .</p>
+            </div>
+        </div>
+    </section>
+    <section id="merchandise">
+        <div class="content">
+            <div class="gold-design">
+                <h2>Merchandise</h2>
+                <p>Check out our exclusive merchandise for Ananda Walk 2024 now available at our stalls in Ananda College.</p>
+                <div class="merchandise">
+                    <img src="448654834_122155807238187827_6104413671146664400_n.jpg" alt="Merchandise 1">
+                    <img src="448765347_122155807262187827_1643997876394589392_n.jpg" alt="Merchandise 2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="content">
+            <div class="gold-design">
+                <h2>Gallery</h2>
+                <p>Explore moments from Ananda Walk 2024.</p>
+                <div class="gallery">
+                    <img src="your-image-url-1.jpg" alt="Gallery Image 1">
+                    <img src="your-image-url-2.jpg" alt="Gallery Image 2">
+                    <img src="your-image-url-3.jpg" alt="Gallery Image 3">
+                    <img src="your-image-url-4.jpg" alt="Gallery Image 4">
+                    <img src="your-image-url-5.jpg" alt="Gallery Image 5">
+                    <img src="your-image-url-6.jpg" alt="Gallery Image 6">
+                    <img src="your-image-url-7.jpg" alt="Gallery Image 7">
+                    <img src="your-image-url-8.jpg" alt="Gallery Image 8">
+                    <img src="your-image-url-9.jpg" alt="Gallery Image 9">
+                    <img src="your-image-url-10.jpg" alt="Gallery Image 10">
+                    <img src="your-image-url-11.jpg" alt="Gallery Image 11">
+                    <img src="your-image-url-12.jpg" alt="Gallery Image 12">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <div class="gold-design">
+                <h2>Contact Us</h2>
+                <p>For more information, please reach out to us at <a href="mailto:info@anandawalk2024.com" ></a>info@anandawalk2024.com 
+                </a>.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Nimith Perera. All rights reserved.</p>
+    </footer>
+</body>
+</html>
